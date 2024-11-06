@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportar Evento</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <div class="header-content">
+            <a href="ccr-alertas.html" aria-label="Voltar para CCR Alertas">
+                <img src="imagens/logo-ccr.png" alt="Logo da CCR - link para CCR Alertas" id="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="ccr-alertas.html">Voltar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Título principal -->
+    <main>
+        <h1>Reportar Evento</h1>
+
+        <!-- Formulário para reportar evento -->
+        <section>
+            <form id="formulario-reportar-evento">
+                <div class="grupo-formulario">
+                    <label for="titulo-evento">Título do Evento:</label>
+                    <input type="text" id="titulo-evento" name="titulo-evento" required>
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="descricao evento">Descrição do Evento:</label>
+                    <textarea id="descricao evento" name="descricao evento" required></textarea>
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="data-evento">Data do Evento (dd/mm/aaaa):</label>
+                    <input type="text" id="data-evento" name="data-evento" required placeholder="dd/mm/aaaa">
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <p>&copy; 2024 CCR</p>
+    </footer>
+
+    <!-- Script formatacao data -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

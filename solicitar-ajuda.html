@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Ajuda</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <div class="header-content">
+            <a href="ccr-alertas.html" aria-label="Voltar para CCR Alertas">
+                <img src="imagens/logo-ccr.png" alt="Logo da CCR - link para CCR Alertas" id="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="ccr-alertas.html">Voltar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Título principal -->
+    <main>
+        <h1>Solicitar Ajuda</h1>
+
+        <!-- Seção solicitar ajuda -->
+        <section>
+            <form id="formulario-solicitar-ajuda">
+                <div class="grupo-formulario">
+                    <label for="selecionar-evento">Selecione um Evento em Aberto:</label>
+                    <select id="selecionar-evento" name="selecionar-evento" required>
+                        <option value="">-- Selecione um evento --</option>
+                        <option value="evento1">Evento 1</option>
+                        <option value="evento2">Evento 2</option>
+                    </select>
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="descricao-ajuda">Descrição da Ajuda Necessária:</label>
+                    <textarea id="descricao-ajuda" name="descricao-ajuda" maxlength="500" required></textarea>
+                </div>
+
+                <button type="submit">Enviar Solicitação</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <p>&copy; 2024 CCR</p>
+    </footer>
+</body>
+
+</html>

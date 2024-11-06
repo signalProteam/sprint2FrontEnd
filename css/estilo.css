@@ -1,0 +1,281 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #000000;
+    background-color: #f8f8f8;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.header-content {
+    max-width: 850px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    max-width: 75px;
+    max-height: 75px;
+    align-self: center;
+}
+
+h1,
+p {
+    margin: 10px 0;
+    text-align: center;
+}
+
+nav {
+    margin-left: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    padding: 5px 15px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Seções */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px auto;
+    background: #999999;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 850px;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 10px;
+}
+
+section p {
+    margin-bottom: 20px;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/* Vantagens e Funcionalidades */
+.quadros {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.quadro {
+    background-color: white;
+    color: #000000;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 10px);
+    padding: 15px;
+}
+
+.quadro h3 {
+    margin-top: 0;
+    text-align: center;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #999999;
+    color: white;
+}
+
+#integrantes {
+    text-align: center;
+}
+
+.foto-integrante {
+    aspect-ratio: 1/1;
+    width: 50%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Ícone do LinkedIn */
+
+a.linkedin-icon i {
+    font-size: 48px;
+    color: #0A66C2;
+    transition: color 0.3s;
+    margin-right: 10px;
+}
+
+a.linkedin-icon i:hover {
+    color: #004182;
+}
+
+/* Ícone do GitHub */
+a.github-icon i {
+    font-size: 48px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+a.github-icon i:hover {
+    color: #000;
+}
+
+
+/* Botões */
+button {
+    background-color: #B22222;
+    color: white;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 15px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 250px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+button:hover {
+    background-color: #8B0000;
+    border-color: #555;
+}
+
+.evento {
+    background-color: white;
+    color: #000000;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 850px;
+}
+
+.evento h3 {
+    color: #B22222;
+    margin-top: 0;
+}
+
+.evento p {
+    margin: 5px 0;
+}
+
+/* Formulário */
+.grupo-formulario {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+select,
+textarea {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    resize: none;
+}
+
+textarea {
+    height: 150px;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+    header {
+        padding: 20px;
+    }
+
+    #logo {
+        max-width: 65px;
+        max-height: 65px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    section {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .quadro {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logo {
+        max-width: 55px;
+        max-height: 55px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    .evento {
+        padding: 10px;
+    }
+}
